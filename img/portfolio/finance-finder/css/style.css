@@ -1,0 +1,387 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body{
+ 	font-family: helvetica, arial, 'sans-serif';
+	width:100%;
+	height:100%;
+	background: #c3edf2;
+}
+#chart-bg{
+	position:fixed;
+	width:100%;
+	height:100%;
+	background: url(../images/baseline-chart.svgz) repeat-x;
+	background-position:center;
+	z-index: -2;
+}
+#texture-overlay{
+	position:fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	background-position:center;
+	background: url(images/texture1.jpg);
+}
+
+.slide{
+	width:100%;
+	height:100%;
+	padding: 8% auto;
+	position: relative;
+
+}
+
+
+.wrapper{
+	width:100%;
+	height:50%;
+	margin:0 auto;
+	position:relative;
+	z-index: -3;
+}
+
+.slideno{
+	position:absolute;
+	top:200px;
+	left:50px;
+	font-weight:bold;
+	background: red
+}
+
+/* nav */
+.navigation{
+	position:fixed;
+	z-index:1;
+	top:15%;
+	left: 0;
+	padding: 10px ;
+}
+.navigation li{
+	text-align: center;
+	color:#fd5e3f;
+	display:block;
+	padding: 5px 10px;
+	line-height:30px;
+	margin-bottom:10px;
+	font-size: 14px;
+	font-weight:bold;	
+	background: #fff;
+	-moz-border-radius:25px; 
+	-webkit-border-radius:25px; 
+	border-radius: 25px; 
+	width:20px;
+}
+
+.navigation li:hover ,.active{
+	cursor:pointer;
+	color: #ff9900;
+	background: #333;
+}
+
+/* buttons */
+
+.button{
+	display:block;
+	width:50px;
+	height:50px;
+	position:absolute;
+	bottom:15%;
+	right:2%;
+	border: 2px dashed #ffffff;
+	-moz-border-radius:25px; 
+	-webkit-border-radius:25px; 
+	border-radius: 25px; 
+	background-color:#333333;
+	background-image:url(../images/arrow.png);
+	box-shadow:0 0 5px orange;
+}
+.button:hover{
+	background-color:#fd5e3f;
+	cursor:pointer;
+
+}
+.try-demo-btn img:hover {
+	opacity: 0.5;
+}
+
+
+/* header */
+.noesis-header{
+	position:fixed;
+	width:100%;
+	height: 70px;
+	z-index:1;
+	background: #444;
+}
+
+.noesislogo img{
+	height: 100%;
+	margin: auto 20px;
+}
+.noesislogo ul{
+	position: absolute;
+	top:30%;
+	left: 20%;
+	display: inline;
+	height: 20px;
+}
+.noesislogo li{
+	display: inline;
+	font-size: 16px;
+	padding: 10px;
+	letter-spacing: -1px;
+	list-style: none;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.noesislogo li a{
+	color: #fff;
+	text-decoration: none;
+}
+.noesislogo li a:hover{
+	color: orange;
+	text-decoration: none;
+}
+.noesislogo .supernav{
+	position: absolute;
+	top: 0px;
+	right: 5px;
+}
+.ticker {
+	height: 100%;
+
+}
+
+
+
+/* parallaxbg */
+
+.parallaxbg {
+	position: relative;
+	width: 700px;
+	height: 225px;
+	background: url(../images/title-bg.svgz)no-repeat;
+	background-size:contain;
+	background-position:left top;
+	margin-top:5%;
+	margin-right: 5%;
+}
+.parallaxbg extra{
+	position: relative;
+	margin-top:5%;
+	margin-right: 5%;
+}
+.parallaxbg h1{
+	position: relative;
+	padding: 30px 60px 0 60px;
+	font-size: 2em;
+	font-family: pacifico;
+	line-height: 1em;
+	color: #fd5e3f;
+}
+.parallaxbg h2{
+	position: relative;
+	padding: 0px 150px 0 60px;
+	width:400px;
+	font-size: 2em;
+	font-weight: bold;
+	font-family: Kreon;
+	color: #3399cb;
+}
+.parallaxbg p{
+	position: relative;
+	width: 375px;
+	padding: 0px 50px 0px 60px;
+	font-size: .95em;
+	color: #666666;
+}
+.parallaxbg h4{
+	position: relative;
+	padding: 0px 50px 0px 60px;
+	font-size: 1.25em;
+	font-family: Architects Daughter;
+	color: #3399cc;
+}
+
+
+
+/******************************
+ SLIDE 1 
+*******************************/
+#slide1{
+	background: url(../images/part-1.svgz)no-repeat;
+	background-position:0% -100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+}
+#slide1 .parallaxbg{
+	position:absolute;
+	left:5%;
+	top:20px;
+}
+#slide1 img:first-child{
+	position:absolute;
+	top: 0px;
+	left: 0px;
+}
+#slide1 img:nth-child(2){
+	position:absolute;
+	top:50%;
+	left:0px;
+}
+/******************************
+ SLIDE 2 
+*******************************/
+#slide2{
+	background:url(../images/part-1b.svgz)no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+}
+#slide2 img:first-child{
+	position:absolute;
+	top: 0px;
+	left: 0px;
+}
+#slide2 img:nth-child(2){
+	position:absolute;
+	top:30px;
+	left:0px;
+}
+/******************************
+ SLIDE 3 
+*******************************/
+
+#slide3{
+	background:url(../images/part-2.svgz)no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#slide3 img:first-child{
+	position:absolute;
+	top: 0px;
+	left: 0px;
+}
+#slide3 img:nth-child(2){
+	position:absolute;
+	top:30px;
+	left:0px;
+}
+/******************************
+ SLIDE 4 
+*******************************/
+
+#slide4{
+	background:url(../images/part-3.svgz)no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#slide4 img:first-child{
+	position:absolute;
+	top: 100px;
+	left: 0px;
+}
+#slide4 img:nth-child(2){
+	position:absolute;
+	top:30px;
+	left:0px;
+}
+/******************************
+ SLIDE 5
+*******************************/
+
+#slide5{
+	background:url(../images/part-4.svgz)no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#slide5 img:first-child{
+	position:absolute;
+	top: 0px;
+	left: 0px;
+}
+#slide5 img:nth-child(2){
+	position:absolute;
+	top:30px;
+	left:0px;
+
+}
+/******************************
+ SLIDE 6
+*******************************/
+
+#slide6{
+	background:url(../images/part-5.svgz)no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#slide6 img:first-child{
+	position:absolute;
+	top: 0px;
+	left: 0px;
+}
+#slide6 img:nth-child(2){
+	position:absolute;
+	top:30px;
+	left:0px;
+}
+/******************************
+ SLIDE 7
+*******************************/
+
+#slide7{
+	background:url(../images/part-6.svgz)no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#slide7 img:first-child{
+	position:absolute;
+	top: 0px;
+	left: 0px;
+}
+#slide7 img:nth-child(2){
+	position:absolute;
+	top:30px;
+	left:0px;
+}
+
+/******************************
+ SLIDE 8
+*******************************/
+
+#slide8{
+	background:url(../images/part-7.svgz)no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#slide8 img:first-child{
+	position:absolute;
+	top: 0px;
+	left: 0px;
+}
+#slide8 img:nth-child(2){
+	position:absolute;
+	top:30px;
+	left:0px;
+}
+
+
+
